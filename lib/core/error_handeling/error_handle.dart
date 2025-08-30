@@ -9,6 +9,6 @@ class DataSuccess<T> extends DataState<T> {
   const DataSuccess(T? data) : super(data, null);
 }
 
-class DataFailed<T> extends DataState {
+class DataFailed<T> extends DataState<T> {
   const DataFailed(String? message) : super(null, message);
 }
