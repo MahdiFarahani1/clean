@@ -1,13 +1,13 @@
-import 'package:flutter_application_1/features/home/domain/use_case/book_usecase.dart';
+import 'package:flutter_application_1/features/home/domain/entity/book_entity.dart';
 
 abstract class BooksStatus {}
 
 class BooksLoading extends BooksStatus {}
 
 class BooksComplete extends BooksStatus {
-  BookUsecase bookUsecase;
+  BookEntity bookEntity;
 
-  BooksComplete({required this.bookUsecase});
+  BooksComplete({required this.bookEntity});
 }
 
 class BooksError extends BooksStatus {

@@ -2,9 +2,16 @@ part of 'home_bloc.dart';
 
 class HomeState {
   BooksStatus booksStatus;
-  HomeState({required this.booksStatus});
+  QuestionStatus questionStatus;
+  HomeState({required this.booksStatus, required this.questionStatus});
 
-  HomeState copyWith({BooksStatus? booksStatus}) {
-    return HomeState(booksStatus: booksStatus ?? this.booksStatus);
+  HomeState copyWith({
+    BooksStatus? booksStatus,
+    QuestionStatus? questionStatus,
+  }) {
+    return HomeState(
+      booksStatus: booksStatus ?? this.booksStatus,
+      questionStatus: questionStatus ?? this.questionStatus,
+    );
   }
 }
