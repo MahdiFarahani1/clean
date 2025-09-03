@@ -50,6 +50,7 @@ class NavBarCommon extends StatelessWidget {
       tabs: const [
         GButton(icon: Icons.home, text: 'Home'),
         GButton(icon: Icons.bookmark, text: 'BookMark'),
+        GButton(icon: Icons.data_object_sharp, text: 'Database'),
       ],
     );
   }

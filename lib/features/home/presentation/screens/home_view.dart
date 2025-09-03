@@ -139,7 +139,15 @@ class _HomeViewState extends State<HomeView> {
                         contentPadding: const EdgeInsets.all(16),
                         leading: CircleAvatar(
                           backgroundColor: Colors.blue.shade100,
-                          child: Icon(Icons.book, color: Colors.blue.shade600),
+                          child: IconButton(
+                            onPressed: () {
+                              print('star');
+                            },
+                            icon: Icon(
+                              Icons.star_border,
+                              color: Colors.blue.shade600,
+                            ),
+                          ),
                         ),
                         title: Text(
                           data.title ?? 'بدون عنوان',
